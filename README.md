@@ -23,28 +23,28 @@ cd base64-tool
 
 2. Run the Script
 -----------------
-python main.py --mode <mode> [--string "text"] [--file filename] [--input input.txt] [--output output.jpg]
+python base64tool.py --mode <mode> [--string "text"] [--file filename] [--input input.txt] [--output output.jpg]
 
 Modes & Examples
 ----------------
 
 Encode a Text String:
-python main.py --mode encode --string "Hello World"
+python base64tool.py --mode encode --string "Hello World"
 
 Decode a Base64 String:
-python main.py --mode decode --string "SGVsbG8gV29ybGQ="
+python base64tool.py --mode decode --string "SGVsbG8gV29ybGQ="
 
 Encode an Image File:
-python main.py --mode encode_image --file image.png
+python base64tool.py --mode encode_image --file image.png
 > Saves output to image.png.b64.txt
 
 Decode a Base64-Encoded Image File:
-python main.py --mode decode_image --input image.png.b64.txt --output restored.png
+python base64tool.py --mode decode_image --input image.png.b64.txt --output restored.png
 
 Project Structure
 -----------------
 base64-tool/
-├── main.py        # Main script
+├── base64tool.py        # Main script
 ├── README.txt           # This file
 ├── sample/
 │   ├── image.png        # Sample image
